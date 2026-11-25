@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>the pieces · morzanti</title>
+<meta name="description" content="Kitchens, wardrobes, libraries, tables: every piece here was drawn for one home and made once in our workshop. Yours will be drawn for you.">
+<meta name="theme-color" content="#F2F0EB">
+<link rel="icon" href="img/loghi/m-ad-archi-inchiostro.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/jost-morzanti-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/morzanti.css">
+</head>
+<body class="">
+<a class="salta" href="#contenuto" data-i18n="skip">Skip to content</a>
+<header class="bar">
+  <div class="bar__in">
+    <nav class="bar__nav" aria-label="Main"><a href="kitchens.html" data-i18n="nav.kitchens" aria-current="page">furniture</a><a href="invitation.html" data-i18n="nav.invitation">the invitation</a><a href="workshop.html" data-i18n="nav.workshop">the workshop</a></nav>
+    <a class="bar__logo" href="index.html" aria-label="morzanti, home">
+      <img class="logo-scuro" src="img/loghi/nome-inchiostro.svg" alt="" width="368" height="108">
+      <img class="logo-chiaro" src="img/loghi/nome-chiaro.svg" alt="" width="368" height="108">
+    </a>
+    <div class="bar__dx"><div class="lingua" role="group" aria-label="Language"><button type="button" data-lingua="en" aria-pressed="true" aria-label="English">EN</button><span aria-hidden="true">·</span><button type="button" data-lingua="es" aria-pressed="false" aria-label="Español">ES</button></div><a class="bar__cta" href="request.html" data-i18n="cta.request">request your invitation</a></div>
+    <button class="bar__menu" type="button" aria-expanded="false" aria-controls="menu" data-i18n="menu.open">menu</button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu__testa">
+    <a href="index.html" aria-label="morzanti, home"><img src="img/loghi/nome-chiaro.svg" alt="" width="368" height="108"></a>
+    <button type="button" data-chiudi data-i18n="menu.close">close</button>
+  </div>
+  <nav aria-label="Main"><a href="kitchens.html" data-i18n="nav.kitchens" aria-current="page">furniture</a><a href="invitation.html" data-i18n="nav.invitation">the invitation</a><a href="workshop.html" data-i18n="nav.workshop">the workshop</a><a href="index.html" data-i18n="nav.home">home</a></nav>
+  <div class="menu__piede">
+    <a class="btn btn--chiaro" href="request.html" data-i18n="cta.request">request your invitation</a>
+    <div class="lingua" role="group" aria-label="Language"><button type="button" data-lingua="en" aria-pressed="true" aria-label="English">EN</button><span aria-hidden="true">·</span><button type="button" data-lingua="es" aria-pressed="false" aria-label="Español">ES</button></div>
+  </div>
+</div>
+<div class="avviso-lingua" hidden role="status">
+  <span>Versión en español en preparación: algunos textos todavía están en inglés.</span>
+  <button type="button">English</button>
+</div>
+<main id="contenuto">
+<section class="sec" style="padding-bottom:clamp(40px,5vw,64px)">
+  <div class="wrap">
+    <div class="testa" style="margin-bottom:clamp(28px,3vw,40px)">
+      <div>
+        <h1 class="display" data-i18n="kit.h">the pieces</h1>
+        <p class="lead" data-i18n="kit.lead">Kitchens, wardrobes, libraries, tables: every piece here was drawn for one home and made once. Yours will be drawn for you: these are only the beginning of the conversation.</p>
+      </div>
+    </div>
+    <div class="filtri" role="group" aria-label="Filter by material">
+      <button type="button" data-filtro="all" aria-pressed="true" data-i18n="f.all">All</button>
+      <button type="button" data-filtro="wood" aria-pressed="false" data-i18n="f.wood">Wood</button>
+      <button type="button" data-filtro="stone" aria-pressed="false" data-i18n="f.stone">Stone</button>
+      <button type="button" data-filtro="metal" aria-pressed="false" data-i18n="f.metal">Metal</button>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-label="The pieces">
+  <div class="wrap">
+    <!-- Per aggiungere una cucina: copia un blocco <a class="cucina">, cambia numero, foto, data-materia (wood, stone, metal) e il link alla sua scheda. -->
+    <div class="cucine">
+      <a class="cucina" href="kitchen-001.html" data-materia="wood stone metal"><div class="foto"><img src="img/segnaposto/segnaposto-cucina-001-noce-marmo.jpg" alt="Kitchen n° 001" style="object-position:50% 50%"></div><div class="cucina__dati"><span class="num">n° 001</span><span><span class="tbc">walnut · calacatta oro · [city]</span></span></div></a>
+      <a class="cucina" href="kitchen-002.html" data-materia="stone"><div class="foto"><img src="img/segnaposto/segnaposto-cucina-002-pietra-grigia.jpg" alt="Kitchen n° 002"></div><div class="cucina__dati"><span class="num">n° 002</span><span><span class="tbc">[name] · [materials]</span></span></div></a>
+      <a class="cucina" href="kitchen-003.html" data-materia="wood stone"><div class="foto"><img src="img/segnaposto/segnaposto-cucina-003-verde.jpg" alt="Kitchen n° 003"></div><div class="cucina__dati"><span class="num">n° 003</span><span><span class="tbc">[name] · [materials]</span></span></div></a>
+      <a class="cucina" href="kitchen-004.html" data-materia="stone"><div class="foto"><img src="img/segnaposto/segnaposto-cucina-004-marmo-bianco.jpg" alt="Kitchen n° 004" loading="lazy"></div><div class="cucina__dati"><span class="num">n° 004</span><span><span class="tbc">[name] · [materials]</span></span></div></a>
+      <a class="cucina" href="kitchen-005.html" data-materia="metal wood"><div class="foto"><img src="img/segnaposto/segnaposto-cucina-005-scura.jpg" alt="Kitchen n° 005" loading="lazy"></div><div class="cucina__dati"><span class="num">n° 005</span><span><span class="tbc">[name] · [materials]</span></span></div></a>
+      <a class="cucina" href="kitchen-006.html" data-materia="wood metal"><div class="foto"><img src="img/segnaposto/segnaposto-cucina-006-palazzo.jpg" alt="Kitchen n° 006" loading="lazy"></div><div class="cucina__dati"><span class="num">n° 006</span><span><span class="tbc">[name] · [materials]</span></span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--stretta scuro">
+  <div class="wrap testa" style="margin-bottom:0;align-items:center">
+    <div><h2 data-i18n="kit.touch">photographs only go so far. come and touch the stone.</h2></div>
+    <a class="btn btn--chiaro" href="request.html" data-i18n="cta.request">request your invitation</a>
+  </div>
+</section>
+</main>
+<footer class="piede">
+  <div class="wrap">
+    <div class="piede__in">
+      <div class="piede__firma">
+        <img src="img/loghi/firma-chiaro.svg" alt="morzanti milano" width="376" height="136">
+        <p data-i18n="foot.claim">Italian furniture, made by us.</p>
+      </div>
+      <div>
+        <h2>milano</h2>
+        <ul>
+          <li><span data-i18n="foot.showroom">Showroom</span><br><span class="tbc">[address]</span></li>
+          <li><span data-i18n="foot.workshop">Workshop</span><br><span class="tbc">[town, region]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>miami</h2>
+        <ul>
+          <li><span class="tbc">[address]</span></li>
+          <li><span class="tbc">[phone]</span></li>
+          <li><span class="tbc">[email]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="foot.pages">Pages</h2>
+        <ul>
+          <li><a href="kitchens.html" data-i18n="nav.kitchens">furniture</a></li>
+          <li><a href="invitation.html" data-i18n="nav.invitation">the invitation</a></li>
+          <li><a href="workshop.html" data-i18n="nav.workshop">the workshop</a></li>
+          <li><a href="manifesto.html" data-i18n="nav.manifesto">our manifesto</a></li>
+          <li><a href="request.html" data-i18n="cta.request">request your invitation</a></li>
+          <li><span class="tbc">Instagram</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="piede__fondo">
+      <span>© 2026 <span class="nome">morzanti · milano · miami</span></span>
+      <div class="lingua" role="group" aria-label="Language"><button type="button" data-lingua="en" aria-pressed="true" aria-label="English">EN</button><span aria-hidden="true">·</span><button type="button" data-lingua="es" aria-pressed="false" aria-label="Español">ES</button></div>
+    </div>
+  </div>
+</footer>
+<script src="js/testi.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

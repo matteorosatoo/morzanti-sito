@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>request your invitation · morzanti</title>
+<meta name="description" content="Tell us a little about your home. One of us will write back personally to plan your visit to Milan.">
+<meta name="theme-color" content="#F2F0EB">
+<link rel="icon" href="img/loghi/m-ad-archi-inchiostro.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/jost-morzanti-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/morzanti.css">
+</head>
+<body class="pagina-richiesta">
+<a class="salta" href="#contenuto" data-i18n="skip">Skip to content</a>
+<header class="bar">
+  <div class="bar__in">
+    <nav class="bar__nav" aria-label="Main"><a href="kitchens.html" data-i18n="nav.kitchens">furniture</a><a href="invitation.html" data-i18n="nav.invitation">the invitation</a><a href="workshop.html" data-i18n="nav.workshop">the workshop</a></nav>
+    <a class="bar__logo" href="index.html" aria-label="morzanti, home">
+      <img class="logo-scuro" src="img/loghi/nome-inchiostro.svg" alt="" width="368" height="108">
+      <img class="logo-chiaro" src="img/loghi/nome-chiaro.svg" alt="" width="368" height="108">
+    </a>
+    <div class="bar__dx"><div class="lingua" role="group" aria-label="Language"><button type="button" data-lingua="en" aria-pressed="true" aria-label="English">EN</button><span aria-hidden="true">·</span><button type="button" data-lingua="es" aria-pressed="false" aria-label="Español">ES</button></div><a class="bar__cta" href="request.html" data-i18n="cta.request">request your invitation</a></div>
+    <button class="bar__menu" type="button" aria-expanded="false" aria-controls="menu" data-i18n="menu.open">menu</button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="menu__testa">
+    <a href="index.html" aria-label="morzanti, home"><img src="img/loghi/nome-chiaro.svg" alt="" width="368" height="108"></a>
+    <button type="button" data-chiudi data-i18n="menu.close">close</button>
+  </div>
+  <nav aria-label="Main"><a href="kitchens.html" data-i18n="nav.kitchens">furniture</a><a href="invitation.html" data-i18n="nav.invitation">the invitation</a><a href="workshop.html" data-i18n="nav.workshop">the workshop</a><a href="index.html" data-i18n="nav.home">home</a></nav>
+  <div class="menu__piede">
+    <a class="btn btn--chiaro" href="request.html" data-i18n="cta.request">request your invitation</a>
+    <div class="lingua" role="group" aria-label="Language"><button type="button" data-lingua="en" aria-pressed="true" aria-label="English">EN</button><span aria-hidden="true">·</span><button type="button" data-lingua="es" aria-pressed="false" aria-label="Español">ES</button></div>
+  </div>
+</div>
+<div class="avviso-lingua" hidden role="status">
+  <span>Versión en español en preparación: algunos textos todavía están en inglés.</span>
+  <button type="button">English</button>
+</div>
+<main id="contenuto">
+<div class="richiesta">
+  <div class="richiesta__foto">
+    <img class="sfondo" src="img/segnaposto/segnaposto-milano-portone-duomo.jpg" alt="" style="object-position:50% 35%">
+    <div class="pila">
+      <img src="img/loghi/m-ad-archi-chiaro.svg" alt="" width="64" height="53" style="width:56px">
+      <p class="titolo" data-i18n="req.glad">we will be glad to welcome you.</p>
+    </div>
+  </div>
+  <div class="richiesta__modulo">
+    <div class="pila pila--l">
+      <div class="pila" data-intro-modulo>
+        <h1 class="titolo" data-i18n="cta.request">request your invitation</h1>
+        <p class="lead" data-i18n="req.lead">Tell us a little about your home. One of us will write back personally to plan your visit to Milan.</p>
+      </div>
+
+      <form class="modulo" novalidate>
+        <div class="campo">
+          <label for="f-nome" data-i18n="fm.name">your name</label>
+          <input id="f-nome" name="nome" type="text" autocomplete="name" required aria-describedby="e-nome">
+          <span class="errore" id="e-nome" aria-live="polite"></span>
+        </div>
+        <div class="campo">
+          <label for="f-email" data-i18n="fm.email">email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-email">
+          <span class="errore" id="e-email" aria-live="polite"></span>
+        </div>
+        <div class="campo">
+          <label for="f-tel"><span data-i18n="fm.phone">phone</span> <span class="facoltativo" data-i18n="fm.opt">(optional)</span></label>
+          <input id="f-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="e-tel">
+          <span class="errore" id="e-tel" aria-live="polite"></span>
+        </div>
+        <div class="campo">
+          <label for="f-citta" data-i18n="fm.city">city</label>
+          <input id="f-citta" name="citta" type="text" autocomplete="address-level2" list="citta" required aria-describedby="e-citta">
+          <datalist id="citta"><option value="Miami Beach"><option value="Brickell"><option value="Coral Gables"><option value="Key Biscayne"><option value="Coconut Grove"></datalist>
+          <span class="errore" id="e-citta" aria-live="polite"></span>
+        </div>
+        <div class="campo campo--largo">
+          <label for="f-lingua" data-i18n="fm.lang">preferred language</label>
+          <select id="f-lingua" name="lingua" required aria-describedby="e-lingua">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="pt">Português</option>
+            <option value="it">Italiano</option>
+          </select>
+          <span class="errore" id="e-lingua" aria-live="polite"></span>
+        </div>
+        <div class="campo campo--largo">
+          <label for="f-msg"><span data-i18n="fm.msg">your message</span> <span class="facoltativo" data-i18n="fm.opt">(optional)</span></label>
+          <textarea id="f-msg" name="messaggio" rows="4" aria-describedby="e-msg"></textarea>
+          <span class="errore" id="e-msg" aria-live="polite"></span>
+        </div>
+        <div class="bottoni">
+          <button class="btn" type="submit" data-i18n="cta.request">request your invitation</button>
+          <span class="piccolo"><span data-i18n="req.or">Or write to us:</span> <span class="tbc">[email] · [WhatsApp]</span></span>
+        </div>
+        <p class="piccolo campo--largo"><span class="tbc">prototipo: il modulo non invia ancora nulla</span></p>
+      </form>
+
+      <div class="conferma pila" id="conferma" hidden>
+        <img src="img/loghi/m-ad-archi-inchiostro.svg" alt="" width="96" height="79">
+        <h2 class="titolo" tabindex="-1"><span data-i18n="req.thanks">thank you,</span> <span data-nome></span>.</h2>
+        <p class="lead" data-i18n="req.thanks.p">Your request is with us. One of us will write back personally to plan your visit to Milan.</p>
+        <p><a class="link" href="index.html" data-i18n="req.home">Back to the home page</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<footer class="piede">
+  <div class="wrap">
+    <div class="piede__in">
+      <div class="piede__firma">
+        <img src="img/loghi/firma-chiaro.svg" alt="morzanti milano" width="376" height="136">
+        <p data-i18n="foot.claim">Italian furniture, made by us.</p>
+      </div>
+      <div>
+        <h2>milano</h2>
+        <ul>
+          <li><span data-i18n="foot.showroom">Showroom</span><br><span class="tbc">[address]</span></li>
+          <li><span data-i18n="foot.workshop">Workshop</span><br><span class="tbc">[town, region]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>miami</h2>
+        <ul>
+          <li><span class="tbc">[address]</span></li>
+          <li><span class="tbc">[phone]</span></li>
+          <li><span class="tbc">[email]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="foot.pages">Pages</h2>
+        <ul>
+          <li><a href="kitchens.html" data-i18n="nav.kitchens">furniture</a></li>
+          <li><a href="invitation.html" data-i18n="nav.invitation">the invitation</a></li>
+          <li><a href="workshop.html" data-i18n="nav.workshop">the workshop</a></li>
+          <li><a href="manifesto.html" data-i18n="nav.manifesto">our manifesto</a></li>
+          <li><a href="request.html" data-i18n="cta.request">request your invitation</a></li>
+          <li><span class="tbc">Instagram</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="piede__fondo">
+      <span>© 2026 <span class="nome">morzanti · milano · miami</span></span>
+      <div class="lingua" role="group" aria-label="Language"><button type="button" data-lingua="en" aria-pressed="true" aria-label="English">EN</button><span aria-hidden="true">·</span><button type="button" data-lingua="es" aria-pressed="false" aria-label="Español">ES</button></div>
+    </div>
+  </div>
+</footer>
+<script src="js/testi.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
